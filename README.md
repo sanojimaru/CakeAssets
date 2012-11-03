@@ -1,0 +1,1 @@
+# Assets plugin for CakePHP
