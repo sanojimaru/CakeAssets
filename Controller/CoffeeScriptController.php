@@ -1,6 +1,6 @@
 <?php
 class CoffeeScriptController extends CakeAssetsAppController {
-    public function convert_coffee_to_js($js_filepath) {
+    public function convert($js_filepath) {
         $this->autoRender = false;
         $this->RequestHandler->respondAs('text/javascript; charset=UTF-8');
 

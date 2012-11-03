@@ -1,3 +1,6 @@
 [submodule "Vendor/coffeescript-php"]
 	path = Vendor/coffeescript-php
 	url = git://github.com/alxlit/coffeescript-php.git
+[submodule "Vendor/scssphp"]
+	path = Vendor/scssphp
+	url = git://github.com/leafo/scssphp.git

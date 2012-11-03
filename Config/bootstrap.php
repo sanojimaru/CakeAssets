@@ -1,4 +1,9 @@
 <?php
 // Load CoffeeScript compiler
-require APP.'Plugin'.DS.'CakeAssets'.DS.'Vendor'.DS.'coffeescript-php'.DS.'src'.DS.'CoffeeScript'.DS.'Init.php';
+define('CAKE_ASSETS_PLUGIN_ROOT', APP.'Plugin'.DS.'CakeAssets'.DS);
+require CAKE_ASSETS_PLUGIN_ROOT.'Vendor'.DS.'coffeescript-php'.DS.'src'.DS.'CoffeeScript'.DS.'Init.php';
 CoffeeScript\Init::load();
+
+// Load SCSS compiler
+require CAKE_ASSETS_PLUGIN_ROOT.'Vendor'.DS.'scssphp'.DS.'scss.inc.php';
+

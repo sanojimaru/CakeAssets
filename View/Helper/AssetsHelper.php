@@ -4,13 +4,19 @@ class AssetsHelper extends AppHelper {
     public $helpers = array('Html', 'Js');
 
     public function js($filepath) {
-        $tag = null;
         if (preg_match('/\.js$/', $filepath)) {
-            $tag = $this->Html->script("/assets/{$filepath}");
+            return $this->Html->script("/assets/js/{$filepath}");
         }
 
-        debug($tag);
-        return $tag;
+        return $this->Html->script($filepath);
+    }
+
+    public function css($filepath) {
+        if (preg_match('/\.css$/', $filepath)) {
+            return $this->Html->css("/assets/css/{$filepath}");
+        }
+
+        return $this->Html->css($filepath);
     }
 
 }
