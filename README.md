@@ -44,3 +44,7 @@ Use AssetsHelper in any views.
 
 - Support precompile all assets.
 - Support minify.
+
+# Demo
+
+http://cakedemo.sanojimaru.com/
